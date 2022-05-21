@@ -38,7 +38,7 @@ If you define a string that starts with the `$` sign in cv.yaml, it will be repl
 - [Why I do my résumé in LaTeX](http://www.toofishes.net/blog/why-i-do-my-resume-latex/) by Dan McGee
 - [What are the benefits of writing resumes in TeX/LaTeX?](http://tex.stackexchange.com/questions/11955/what-are-the-benefits-of-writing-resumes-in-tex-latex) on TeX Stack Exchange
 - [Typesetting your academic CV in LaTeX](http://nitens.org/taraborelli/cvtex) by Dario Taraborelli
-- [Résumé advices](http://practicaltypography.com/resumes.html) from Butterick's Practical Typography 
+- [Résumé advices](http://practicaltypography.com/resumes.html) from Butterick's Practical Typography
 - [Multichannel Text Processing](https://ia.net/topics/multichannel-text-processing/) by iA
 - [Why Microsoft Word must Die](http://www.antipope.org/charlie/blog-static/2013/10/why-microsoft-word-must-die.html) by Charlie Stross
 - [Word Processors: Stupid and Inefficient](http://ricardo.ecn.wfu.edu/~cottrell/wp.html) by Allin Cottrell
