@@ -1,73 +1,29 @@
-# CV Boilerplate
-
-> I consider LaTeX resumes to be a secret handshake of sorts, something that makes me significantly more likely to be inclined to hire a candidate.  
-> &mdash;<cite>[zackelan](https://news.ycombinator.com/item?id=10452606)<cite> on HN
-
-A boilerplate to ease the pain of building and maintaining a CV or résumé using LaTeX.
-
-## Intro
-
-The separation of content from presentation is considered a universal best practice. The typical content of a CV is a perfect fit for a YAML file due to its structured nature:
-
-```YAML
----
-name: Friedrich Nietzsche
-address:
-- Humboldtstraße 36
-- 99425 Weimar
-- Prussia
-email: friedrich@thevoid.de
-# ...
-experience:
-- years: 1879--1889
-  employer: Freiberufler
-  job: Freier Philosoph
-  city: Sils-Maria
-- years: 1869–-1879
-  employer: Universität Basel
-  job: Professor für klassische Philologie
-  city: Basel
-```
-
-That makes super easy to update a CV while keeping a consistent structure.
-
-Thanks to [pandoc](http://pandoc.org/), we can then access our data from `template.tex` using a special notation. Iterating on repetitive data structures becomes trivial:
-
-```latex
-$for(experience)$
-  $experience.years$\\
-  \textsc{$experience.employer$}\\
-  \emph{$experience.job$}\\
-  $experience.city$\\[.2cm]
-$endfor$
-```
-
-LaTeX takes then care of the typesetting with its usual elegance. Below a preview of the final result. Check out the [output](output.pdf) to see the compiled PDF.
-
-![preview](preview.png)
-
-With this method, you can keep your entire CV encoded in a single YAML file, put it under version control (into a gist, for instance), and generate a PDF on the fly when needed. You can also easily export it to other formats, like HTML for web publishing (I've heard [Jekyll](http://jekyllrb.com/) likes YAML). Convenient, portable and time-proof.
+# My Curriculum Vitae (Resume)
 
 ## Dependencies
 
 1. LaTeX with the following extra packages: `fontspec` `geometry` `multicol` `xunicode` `xltxtra` `marginnote` `sectsty` `ulem` `hyperref` `polyglossia`
 2. [Pandoc](http://pandoc.org/), the universal document converter.
-
-I highly recommend [TinyTeX](https://yihui.org/tinytex/) as LaTeX distribution. All additional packages can be installed with `tlmgr` as needed.
+3. UNIX-like environment with Bash-like shell.
 
 ## Getting started
 
-1. Fill `details.yml` with your personal details, work experience, education, and desired settings.
+**Note**: If you have sensitive information on your cv, you can create `.private` file. Add your sensitive information as follows:
+
+```bash
+export CV_PHONE="<private phone number>"
+export CV_EMAIL="<private email address>"
+...
+export CV_PRIVATE_INFO=<something private>
+```
+
+If you define a string that starts with the `$` sign in cv.yaml, it will be replaced with the corresponding value defined in `.private` file.
+
+1. Fill `cv.yml` with your personal details, work experience, education, and desired settings.
 2. Run `make` to compile the PDF.
 3. Tweak on `template.tex` until you're satisfied with the result.
 
-**Note**: this template needs to be compiled with XeTeX.
-
-### Note for Windows users
-
-Although I didn't test it, you can probably use this on Windows, too. Both [Pandoc](http://pandoc.org/installing.html) and LaTeX can be installed on Windows and you should be able to run makefiles on Windows through [Cygwin](https://www.cygwin.com/). If that's too much hassle, this command should do the trick in Powershell:
-
-    pandoc details.yml -o output.pdf --template=template.tex --pdf-engine=xelatex
+**Note**: This template needs to be compiled with XeTeX.
 
 ## Available settings
 

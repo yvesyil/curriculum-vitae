@@ -1,12 +1,13 @@
+# UTF-8 encoding
 ---
-# Personal details
-name: Friedrich Nietzsche
+# Personal details 
+name: Yiğit Yılmaz
 address:
-- Humboldtstraße 36
-- 99425 Weimar
-- Prussia
-phone: "+49 03643 545400"
-email: friedrich@thevoid.de
+- Cork
+- County Cork
+- Ireland
+phone: $CV_PHONE
+email: $CV_EMAIL
 # Insert URLs without http://
 urls:
 - wki.pe/friedrich_nietzsche
@@ -14,13 +15,11 @@ urls:
 
 # Sections
 
-intro: "I know my fate. One day my name will be associated with the memory of something tremendous --- a crisis without equal on earth, the most profound collision of conscience, a decision that was conjured up against everything that had been believed, demanded, hallowed so far. I am no man, I am dynamite."
+intro: "Highly-motivated junior software engineer and student with an in-depth knowledge of web development, distributed systems, and deep learning. Strong foundational skills in computer science topics such as algorithms, data structures, and computer networks. Proficient in variety of platforms and programming languages with an innate ability to learn and master new technologies. I'm able to work well both in a team environment as well as using own initiative."
 
 skills:
-- Aesthetics, Ethics, Metaphysics, Nihilism
-- Psychology, Ontology, Poetry, Value theory
-- Voluntarism, Tragedy, Fact–value distinction
-- Anti-foundationalism, Philosophy of history
+- Programming
+- Computer Networks
 
 experience:
 - years: 1879--1889
