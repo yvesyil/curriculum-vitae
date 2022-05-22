@@ -27,6 +27,12 @@ $if(lang)$
 \setmainlanguage{$lang$}
 $endif$
 
+% THEME
+%--------------------------------
+\usepackage[dvipsnames]{xcolor}
+\pagecolor{black}
+\color{white}
+
 % TYPOGRAPHY
 %--------------------------------
 \usepackage{fontspec} 
@@ -121,17 +127,18 @@ $endif$
 \section*{Previous Experience}
 \noindent
 $for(experience)$
-\note{$experience.years$}\textsc{$experience.employer$}\\
+\note{$experience.start$}\\
+\note{$experience.end$} \textsc{$experience.employer$}\\
 \emph{$experience.job$}\\
-$experience.city$\\[.2cm]
+$experience.location$\\[.2cm]
 $endfor$
 
 $if(education)$
 \section*{Education}
 \noindent
 $for(education)$
-\note{$education.year$}\textbf{$education.subject$}$if(education.degree)$, $education.degree$$endif$\\
-\emph{$education.institute$}$if(education.city)$, $education.city$$endif$\\[.2cm]
+\note{$education.years$} \textbf{$education.subject$} $if(education.degree)$, $education.degree$ $endif$\\
+\emph{$education.institute$}$if(education.location)$, $education.location$ $endif$\\[.2cm]
 $endfor$
 $endif$
 

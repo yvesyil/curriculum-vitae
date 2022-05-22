@@ -1,4 +1,3 @@
-# UTF-8 encoding
 ---
 # Personal details 
 name: Yiğit Yılmaz
@@ -6,12 +5,12 @@ address:
 - Cork
 - County Cork
 - Ireland
-phone: $CV_PHONE
-email: $CV_EMAIL
+phone: $phone
+email: $email
 # Insert URLs without http://
 urls:
-- wki.pe/friedrich_nietzsche
-- twitter.com/tinynietzsche
+- github.com/yvesyil
+- yvesyil.github.io
 
 # Sections
 
@@ -22,32 +21,30 @@ skills:
 - Computer Networks
 
 experience:
-- years: 1879--1889
-  employer: Freiberufler
-  job: Freier Philosoph
-  city: Sils-Maria
-- years: 1869–-1879
-  employer: Universität Basel
-  job: Professor für klassische Philologie
-  city: Basel
-- years: 1867--1868
-  employer: Preußische Artillerie
-  job: Kanonier
-  city: Naumburg
+- start: January, 2022
+  end: July, 2022
+  employer: Johnson Controls International
+  job: Software Developer Intern
+  location: Cork, Ireland
+- start: June, 2021
+  end: August, 2021
+  employer: Adastec
+  job: Software Engineer Intern
+  location: Istanbul, Turkey
 
 education:
-- year: 1867
-  subject: Philology
-  institute: Universität Leipzig
-  city: Leipzig
-- year: 1864
-  subject: Abitur
-  institute: Schulpforta
-  city: Naumburg
+- years: 2021 -- 2022
+  subject: Software Design with Cloud Computing
+  institute: "Technological University of the Shannon: Midlands"
+  location: Athlone, Ireland
+- years: 2019 -- 2021
+  subject: Computer and Information Science
+  institute: Bilkent University
+  location: Ankara, Turkey
 
 # Settings
 mainfont: Hoefler Text
 fontsize: 10pt
 lang: en-GB
-geometry: a4paper, left=35mm, right=35mm, top=51mm, bottom=17mm
+geometry: a4paper, left=35mm, right=35mm, top=41mm, bottom=17mm
 ---

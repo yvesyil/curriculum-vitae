@@ -5,19 +5,20 @@
 1. LaTeX with the following extra packages: `fontspec` `geometry` `multicol` `xunicode` `xltxtra` `marginnote` `sectsty` `ulem` `hyperref` `polyglossia`
 2. [Pandoc](http://pandoc.org/), the universal document converter.
 3. UNIX-like environment with Bash-like shell.
+4. **Optional**: [Python](https://www.python.org/), if you want to use private fields.
 
 ## Getting started
 
 **Note**: If you have sensitive information on your cv, you can create `.private` file. Add your sensitive information as follows:
 
-```bash
-export CV_PHONE="<private phone number>"
-export CV_EMAIL="<private email address>"
+```yaml
+phone: "<private phone number>"
+email: "<private email address>"
 ...
-export CV_PRIVATE_INFO=<something private>
+private_info: <something private>
 ```
 
-If you define a string that starts with the `$` sign in cv.yaml, it will be replaced with the corresponding value defined in `.private` file.
+If you define a string that starts with the `$` in cv.yaml, it will be replaced with the corresponding value defined in `.private` file.
 
 1. Fill `cv.yml` with your personal details, work experience, education, and desired settings.
 2. Run `make` to compile the PDF.
