@@ -80,7 +80,7 @@ $endif$
 %--------------------------------
 \begin{document}
 
-{\LARGE $name$}\\[.2cm]
+{\LARGE $name$}\\[.1cm]
 
 $if(urls)$
 \begin{multicols}{2}
@@ -105,47 +105,52 @@ $endfor$
 \end{multicols}
 $endif$
 
-\vspace{30pt}
+\vspace{15pt}
 
 $if(intro)$
 $intro$
 $endif$
 
-\subsection*{Areas of Interest}
+\vspace{5pt}
+
+\subsection*{Interests}
 $if(skills)$
 \begin{itemize}
-    $for(skills)$
-      \item $skills$
-    $endfor$
+  $for(skills)$
+    \item $skills$
+  $endfor$
 \end{itemize}
 $endif$
 
 % \vfill
 
-\vspace{25pt}
+\vspace{10pt}
 
-\section*{Previous Experience}
+\section*{Experience}
 \noindent
 $for(experience)$
-\note{$experience.start$}\\
-\note{$experience.end$} \textsc{$experience.employer$}\\
-\emph{$experience.job$}\\
-$experience.location$\\[.2cm]
+\note{$experience.start$} \href{http://$experience.href$}{$experience.employer$}, $experience.location$\\
+\note{$experience.end$} \textbf{$experience.job$}\\
+$experience.brief$\\[.2cm]
 $endfor$
+
+$if(projects)$
+\section*{Projects}
+$for(projects)$
+\textbf{$projects.name$}\\
+$projects.brief$\\
+\emph{$projects.stack$}\\
+\href{http://$projects.href$}{$projects.href$}\\[.2cm]
+$endfor$
+$endif$
 
 $if(education)$
 \section*{Education}
 \noindent
 $for(education)$
-\note{$education.years$} \textbf{$education.subject$} $if(education.degree)$, $education.degree$ $endif$\\
-\emph{$education.institute$}$if(education.location)$, $education.location$ $endif$\\[.2cm]
-$endfor$
-$endif$
-
-$if(languages)$
-\section*{Languages}
-$for(languages)$
-\emph{$languages.language$} ($languages.proficiency$)\\
+\note{$education.years$} \href{http://$education.href$}{$education.institute$},$if(education.location)$ $education.location$ $endif$\\
+\textbf{$education.subject$}$if(education.degree)$, $education.degree$ $endif$\\
+$education.grade$\\[.2cm]
 $endfor$
 $endif$
 

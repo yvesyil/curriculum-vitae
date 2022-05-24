@@ -9,42 +9,58 @@ phone: $phone
 email: $email
 # Insert URLs without http://
 urls:
-- github.com/yvesyil
+- $github
 - yvesyil.github.io
 
 # Sections
-
-intro: "Highly-motivated junior software engineer and student with an in-depth knowledge of web development, distributed systems, and deep learning. Strong foundational skills in computer science topics such as algorithms, data structures, and computer networks. Proficient in variety of platforms and programming languages with an innate ability to learn and master new technologies. I'm able to work well both in a team environment as well as using own initiative."
+intro: "Highly-motivated junior software engineer and student with an in-depth knowledge of web development and deep learning. Strong foundational skills in computer science topics such as algorithms, data structures, and computer networks. Proficient in variety of platforms and programming languages with an innate ability to learn and master new technologies."
 
 skills:
-- Programming
-- Computer Networks
+- Web Development
+- Linux/Unix-like Systems
+- ML & Deep Learning
 
 experience:
 - start: January, 2022
   end: July, 2022
   employer: Johnson Controls International
+  href: www.johnsoncontrols.com
   job: Software Developer Intern
   location: Cork, Ireland
+  brief: Developed an enterprise-grade chatbot that uses natural language processing (NLP) to understand questions intelligently. Uses user feedback system to discover potential improvements and logs conversations to deliver insights.
 - start: June, 2021
   end: August, 2021
   employer: Adastec
+  href: www.adastec.com
   job: Software Engineer Intern
   location: Istanbul, Turkey
+  brief: Worked together with the perception team. Created a service that purifies and classifies a raw LiDAR sensor data stream and calibrates it with a point cloud map. This allows the autonomous driving system to understand where it currently is and what's objects are around it.
+
+projects:
+- name: MNIST Neural Network REST API
+  brief: The neural network is implemented completely from scratch without using external libraries.
+  stack: TypeScript, Express.js, Node.js
+  href: $github/neural-net-api
 
 education:
 - years: 2021 -- 2022
   subject: Software Design with Cloud Computing
-  institute: "Technological University of the Shannon: Midlands"
+  degree: B.S.
+  institute: "Technological University of the Shannon"
+  href: www.ait.ie
   location: Athlone, Ireland
+  grade: 3.7/4.0 GPA
 - years: 2019 -- 2021
   subject: Computer and Information Science
+  degree: B.S.
   institute: Bilkent University
+  href: w3.bilkent.edu.tr/bilkent
   location: Ankara, Turkey
+  grade: 3.2/4.0 GPA
 
 # Settings
 mainfont: Hoefler Text
 fontsize: 10pt
 lang: en-GB
-geometry: a4paper, left=35mm, right=35mm, top=41mm, bottom=17mm
+geometry: a4paper, left=35mm, right=35mm, top=21mm, bottom=17mm
 ---
