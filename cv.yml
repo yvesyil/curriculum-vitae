@@ -10,6 +10,7 @@ email: $email
 # Insert URLs without http://
 urls:
 - $github
+- linkedin.com/in/d-yigit-yilmaz
 - yvesyil.github.io
 
 # Sections
