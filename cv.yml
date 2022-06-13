@@ -9,15 +9,15 @@ phone: $phone
 email: $email
 # Insert URLs without http://
 urls:
+- yvesyil.xyz
 - $github
 - linkedin.com/in/d-yigit-yilmaz
-- yvesyil.github.io
 
 # Sections
 intro: "Highly-motivated junior software engineer and student with an in-depth knowledge of web development and deep learning. Strong foundational skills in computer science topics such as algorithms, data structures, and computer networks. Proficient in variety of platforms and programming languages with an innate ability to learn and master new technologies."
 
 skills:
-- Web Development
+- Web APIs and Systems Programming
 - Linux/Unix-like Systems
 - ML & Deep Learning
 
@@ -42,6 +42,10 @@ projects:
   brief: The neural network is implemented completely from scratch without using external libraries.
   stack: TypeScript, Express.js, Node.js
   href: $github/neural-net-api
+- name: Personal Website
+  brief: Uses custom JavaScript framework I made and renders complex graphics using WebGL.
+  stack: Modern JavaScript, WebGL (OpenGL ES 2.0), HTML/CSS, GLSL 1.x
+  href: $github/yvesyil.github.io
 
 education:
 - years: 2021 -- 2022
@@ -60,8 +64,8 @@ education:
   grade: 3.2/4.0 GPA
 
 # Settings
-mainfont: Hoefler Text
+mainfont: EB Garamond # Like Hoefler Text but free license
 fontsize: 10pt
 lang: en-GB
-geometry: a4paper, left=35mm, right=35mm, top=21mm, bottom=17mm
+geometry: a4paper, left=35mm, right=35mm, top=17mm, bottom=17mm
 ---
