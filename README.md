@@ -6,6 +6,7 @@
 2. [Pandoc](http://pandoc.org/), the universal document converter.
 3. UNIX-like environment with Bash-like shell.
 4. **Optional**: [Python](https://www.python.org/), if you want to use private fields.
+5. Font: [EB Garamond](http://www.georgduffner.at/ebgaramond/index.html) (SIL Open Font License)
 
 ## Getting started
 
