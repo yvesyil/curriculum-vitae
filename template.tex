@@ -80,7 +80,7 @@ $endif$
 %--------------------------------
 \begin{document}
 
-{\LARGE $name$}\\[.1cm]
+{\LARGE $name$}\\%[.1cm]
 
 $if(urls)$
 \begin{multicols}{2}
@@ -105,13 +105,13 @@ $endfor$
 \end{multicols}
 $endif$
 
-\vspace{5pt}
+\vspace{-5pt}
 
 $if(intro)$
 $intro$
 $endif$
 
-\vspace{5pt}
+%\vspace{2pt}
 
 \subsection*{Interests}
 $if(skills)$
@@ -124,7 +124,7 @@ $endif$
 
 % \vfill
 
-\vspace{5pt}
+\vspace{-5pt}
 
 \section*{Experience}
 \noindent
@@ -133,6 +133,8 @@ $for(experience)$
 \note{$experience.end$} \textbf{$experience.job$}\\
 $experience.brief$\\[.2cm]
 $endfor$
+
+\vspace{-5pt}
 
 $if(projects)$
 \section*{Projects}
@@ -143,6 +145,8 @@ $projects.brief$\\
 \href{http://$projects.href$}{$projects.href$}\\[.2cm]
 $endfor$
 $endif$
+
+\vspace{-5pt}
 
 $if(education)$
 \section*{Education}

@@ -2,8 +2,8 @@
 # Personal details 
 name: Yiğit Yılmaz
 address:
-- Cork
-- County Cork
+- Athlone
+- County Westmeath
 - Ireland
 phone: $phone
 email: $email
@@ -17,7 +17,7 @@ urls:
 intro: "Highly-motivated junior software engineer and student with an in-depth knowledge of web development and deep learning. Strong foundational skills in computer science topics such as algorithms, data structures, and computer networks. Proficient in variety of platforms and programming languages with an innate ability to learn and master new technologies."
 
 skills:
-- Web APIs and Systems Programming
+- Fullstack Web and Systems-level Programming
 - Linux/Unix-like Systems
 - ML & Deep Learning
 
@@ -38,6 +38,10 @@ experience:
   brief: Worked together with the perception team. Created a service that purifies and classifies a raw LiDAR sensor data stream and calibrates it with a point cloud map. This allows the autonomous driving system to understand where it currently is and what's objects are around it.
 
 projects:
+- name: Claw.js
+  brief: A GPU accelerated linear algebra library for Node.js.
+  stack: C, OpenCL, JavaScript
+  href: github.com/tussoftwaredesign/claw-js/tree/dev
 - name: MNIST Neural Network REST API
   brief: The neural network is implemented completely from scratch without using external libraries.
   stack: TypeScript, Express.js, Node.js
@@ -48,15 +52,15 @@ projects:
   href: $github/yvesyil.github.io
 
 education:
-- years: 2021 -- 2022
-  subject: Software Design with Cloud Computing
+- years: 2021 -- 2023
+  subject: Software Engineering
   degree: B.S.
-  institute: "Technological University of the Shannon"
+  institute: Technological University of the Shannon
   href: www.ait.ie
   location: Athlone, Ireland
   grade: 3.7/4.0 GPA
 - years: 2019 -- 2021
-  subject: Computer and Information Science
+  subject: Software Engineering
   degree: B.S.
   institute: Bilkent University
   href: w3.bilkent.edu.tr/bilkent
@@ -67,5 +71,5 @@ education:
 mainfont: EB Garamond # Like Hoefler Text but free license
 fontsize: 10pt
 lang: en-GB
-geometry: a4paper, left=35mm, right=35mm, top=17mm, bottom=17mm
+geometry: a4paper, left=30mm, right=30mm, top=10mm, bottom=17mm
 ---
