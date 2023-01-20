@@ -1,4 +1,4 @@
-# My Curriculum Vitae (Resume)
+# Curriculum Vitae
 
 ## Dependencies
 
