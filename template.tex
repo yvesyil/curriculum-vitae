@@ -113,7 +113,7 @@ $endif$
 
 %\vspace{2pt}
 
-\subsection*{Interests}
+\subsection*{Skills}
 $if(skills)$
 \begin{itemize}
   $for(skills)$
@@ -131,10 +131,11 @@ $endif$
 $for(experience)$
 \note{$experience.start$} \href{http://$experience.href$}{$experience.employer$}, $experience.location$\\
 \note{$experience.end$} \textbf{$experience.job$}\\
-$experience.brief$\\[.2cm]
+$experience.brief$\\
+\emph{$experience.stack$}\\[.2cm]
 $endfor$
 
-\vspace{-5pt}
+\vspace{-20pt}
 
 $if(projects)$
 \section*{Projects}
@@ -145,7 +146,7 @@ $projects.brief$\\
 \href{http://$projects.href$}{$projects.href$}\\[.2cm]
 $endfor$
 $endif$
-
+\& more on \href{http://$github$}{$github$}.
 \vspace{-5pt}
 
 $if(education)$

@@ -4,7 +4,7 @@ FLAGS = --pdf-engine=xelatex
 PYTHON = python3
 SECRET = .private.yml
 
-output.pdf: $(src)
+curriculum-vitae.pdf: $(src)
 	$(TEX) $(filter-out $<,$^ ) -o $@ --template=$< $(FLAGS)
 
 cv-final.yml: cv.yml

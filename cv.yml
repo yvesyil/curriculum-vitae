@@ -7,6 +7,7 @@ address:
 - Ireland
 phone: $phone
 email: $email
+github: $github
 # Insert URLs without http://
 urls:
 - yvesyil.xyz
@@ -28,27 +29,29 @@ experience:
   href: www.johnsoncontrols.com
   job: Software Developer Intern
   location: Cork, Ireland
-  brief: Developed an enterprise-grade chatbot that uses natural language processing (NLP) to understand questions intelligently. Uses user feedback system to discover potential improvements and logs conversations to deliver insights.
+  brief: Developed an enterprise-grade chatbot that uses natural language processing (NLP) to understand questions intelligently. Uses user feedback system to discover potential improvements, and logs conversations to deliver insights.
+  stack: Python 3, JavaScript, Azure Cloud, Azure Cognitive Services
 - start: June, 2021
   end: August, 2021
   employer: Adastec
   href: www.adastec.com
   job: Software Engineer Intern
   location: Istanbul, Turkey
-  brief: Worked together with the perception team. Created a service that purifies and classifies a raw LiDAR sensor data stream and calibrates it with a point cloud map. This allows the autonomous driving system to understand where it currently is and what's objects are around it.
+  brief: Worked together with the perception team. Created a service that purifies and classifies raw LiDAR sensor data stream and calibrates it with a point cloud map. This allows the autonomous driving system to understand where it currently is and what objects are around it.
+  stack: C++14, Python 3, ROS, PyTorch
 
 projects:
 - name: Claw.js
-  brief: A GPU accelerated linear algebra library for Node.js.
-  stack: C, OpenCL, JavaScript
+  brief: A GPU accelerated linear algebra library for JavaScript, written in C.
+  stack: C11, OpenCL, Node.js, CMake, Jest
   href: github.com/tussoftwaredesign/claw-js/tree/dev
-- name: MNIST Neural Network REST API
-  brief: The neural network is implemented completely from scratch without using external libraries.
-  stack: TypeScript, Express.js, Node.js
+- name: Neural Network from Scratch
+  brief: A web API that serves an MNIST classifier written from scratch without using external libraries.
+  stack: TypeScript, Express.js, Node.js, Multivariate Calculus
   href: $github/neural-net-api
 - name: Personal Website
-  brief: Uses custom JavaScript framework I made and renders complex graphics using WebGL.
-  stack: Modern JavaScript, WebGL (OpenGL ES 2.0), HTML/CSS, GLSL 1.x
+  brief: Uses custom JavaScript framework I made and renders a fractal using only WebGL.
+  stack: HTML/CSS, JavaScript (ES6), WebGL (OpenGL ES 2.0)
   href: $github/yvesyil.github.io
 
 education:
@@ -58,14 +61,12 @@ education:
   institute: Technological University of the Shannon
   href: www.ait.ie
   location: Athlone, Ireland
-  grade: 3.7/4.0 GPA
 - years: 2019 -- 2021
   subject: Software Engineering
   degree: B.S.
   institute: Bilkent University
   href: w3.bilkent.edu.tr/bilkent
   location: Ankara, Turkey
-  grade: 3.2/4.0 GPA
 
 # Settings
 mainfont: EB Garamond # Like Hoefler Text but free license
