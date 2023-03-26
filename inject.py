@@ -35,6 +35,6 @@ with open('cv.yml', 'r') as file:
     print(e)
   
 dat = inject(fields, cv)
-  
+
 with open('cv-final.yml', 'w') as outf:
   outf.write(dat)

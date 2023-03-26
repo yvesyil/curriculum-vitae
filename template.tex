@@ -14,7 +14,7 @@
 
 % Enable multicolumns
 \usepackage{multicol}
-\setlength{\columnsep}{-3.5cm}
+\setlength{\columnsep}{2.0cm}
 
 % Uncomment to suppress page numbers
 % \pagenumbering{gobble}
@@ -30,8 +30,8 @@ $endif$
 % THEME
 %--------------------------------
 \usepackage[dvipsnames]{xcolor}
-\pagecolor{black}
-\color{white}
+\pagecolor{$pagecolor$}
+\color{$color$}
 
 % TYPOGRAPHY
 %--------------------------------
@@ -47,7 +47,7 @@ $endif$
 % MARGIN NOTES
 %--------------------------------
 \usepackage{marginnote}
-\newcommand{\note}[1]{\marginnote{\scriptsize #1}}
+\newcommand{\note}[1]{\marginnote{\small #1}}
 \renewcommand*{\raggedleftmarginnote}{}
 \setlength{\marginparsep}{7pt}
 \reversemarginpar
@@ -59,6 +59,11 @@ $endif$
 \sectionfont{\rmfamily\mdseries} 
 \subsectionfont{\rmfamily\mdseries\scshape\normalsize} 
 \subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+
+
+% QR CODE
+%--------------------------------
+\usepackage{qrcode}
 
 % PDF SETUP
 %--------------------------------
@@ -82,9 +87,15 @@ $endif$
 
 {\LARGE $name$}\\%[.1cm]
 
+
+$if(qrcode)$
+\begin{multicols}{3}
+$else$
 $if(urls)$
 \begin{multicols}{2}
 $endif$
+$endif$
+
 
 $for(address)$
 $address$\\
@@ -93,17 +104,29 @@ $endfor$
 \vspace{-10pt}
 
 $phone$\\
-\href{mailto:$email$}{$email$}\\
+\small{Email:} \href{mailto:$email$}{$email$}\\
 
 
 $if(urls)$
 \columnbreak
 
 $for(urls)$
-\href{http://$urls$}{$urls$}\\
+\small{$urls.name$:} \href{http://$urls.url$}{$urls.url$}\\
 $endfor$
-\end{multicols}
 $endif$
+
+$if(qrcode)$
+\columnbreak
+
+\small{$qrcode.name$:}
+\quad
+\hypersetup{urlcolor=$color$}
+\qrcode{http://$qrcode.url$}
+\hypersetup{urlcolor=[rgb]{0.117,0.682,0.858}}
+
+$endif$
+
+\end{multicols}
 
 \vspace{-5pt}
 

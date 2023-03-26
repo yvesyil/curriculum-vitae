@@ -10,9 +10,16 @@ email: $email
 github: $github
 # Insert URLs without http://
 urls:
-- yvesyil.xyz
-- $github
-- linkedin.com/in/d-yigit-yilmaz
+- name: Website
+  url: yvesyil.xyz
+- name: GitHub
+  url: $github
+- name: LinkedIn
+  url: linkedin.com/in/d-yigit-yilmaz
+
+qrcode:
+  name: Website
+  url: yvesyil.xyz
 
 # Sections
 intro: "Highly-motivated junior software engineer and student with an in-depth knowledge of web development and deep learning. Strong foundational skills in computer science topics such as algorithms, data structures, and computer networks. Proficient in variety of platforms and programming languages with an innate ability to learn and master new technologies."
@@ -25,11 +32,11 @@ skills:
 experience:
 - start: January, 2022
   end: July, 2022
-  employer: Johnson Controls International
+  employer: Johnson Controls
   href: www.johnsoncontrols.com
-  job: Software Developer Intern
+  job: Software Developer Intern (Fixed-Term Contract)
   location: Cork, Ireland
-  brief: Developed an enterprise-grade chatbot that uses natural language processing (NLP) to understand questions intelligently. Uses user feedback system to discover potential improvements, and logs conversations to deliver insights.
+  brief: Helped to develop an enterprise-grade chatbot that uses natural language processing (NLP) to understand questions intelligently. Uses user feedback system to discover potential improvements, and logs conversations to deliver insights.
   stack: Python 3, JavaScript, Azure Cloud, Azure Cognitive Services
 - start: June, 2021
   end: August, 2021
@@ -56,14 +63,14 @@ projects:
 
 education:
 - years: 2021 -- 2023
-  subject: Software Engineering
-  degree: B.S.
-  institute: Technological University of the Shannon
+  subject: Software Engineering with Cloud Computing
+  degree: B.Sc Hons.
+  institute: Technological University of the Shannon (TUS)
   href: www.ait.ie
   location: Athlone, Ireland
 - years: 2019 -- 2021
   subject: Software Engineering
-  degree: B.S.
+  degree: B.Sc (Incomplete, transferred to TUS)
   institute: Bilkent University
   href: w3.bilkent.edu.tr/bilkent
   location: Ankara, Turkey
@@ -73,4 +80,6 @@ mainfont: EB Garamond # Like Hoefler Text but free license
 fontsize: 10pt
 lang: en-GB
 geometry: a4paper, left=30mm, right=30mm, top=10mm, bottom=17mm
+pagecolor: white
+color: black
 ---
